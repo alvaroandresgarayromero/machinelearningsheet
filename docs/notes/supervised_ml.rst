@@ -17,10 +17,16 @@ Supervised machine learning is the use of LABELED data to train models
 
 There are two categories of supervised machine learning:
 
-- Classification Models:
+- Classification Models: Answers questions in the form of yes or no
     These models predict 'categorical outcome' of an item.
     For example, predict whether an email is a spam or not a spam.
 
-- Regression Models:
+- Regression Models: Answers questions in the form of how much
     These models predict 'numerical outcome' of an item.
     For example, predict the price of a house
+
+
+Linear Regression
+------------------
+
+- `Linear Regression Notes <linear_regression.rst>`_
