@@ -1,0 +1,13 @@
+# local development
+version: "3"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: image_latest
+    container_name: container_latest
+    volumes:
+      - .:/app
+    ports:
+      - "127.0.0.1:8888:8888"
