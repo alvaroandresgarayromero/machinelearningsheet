@@ -12,11 +12,11 @@ Cheat Sheet
 - `Reinforcement Learning <docs/notes/reinforcement_learning_ml.rst>`_
 
 
-Running Jupyter Files
-========================
+Getting Started
+================
 
 This workspace utilizes Docker to create a containerized service with all the required dependencies to
-run the python practice examples. To get started, follow the three main steps
+run the python jupyter practice examples. To get started, follow the three main steps
 
 - Verify that Docker and Docker-Compose are installed.
 

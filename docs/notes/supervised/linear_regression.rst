@@ -33,5 +33,6 @@ Gradient (Derivative) Descent:
 --------------------------------
 The gradient descent is a method to descent from high to low error by using the derivative of the error function as the step
 
-.. image:: gradient_desncet_derivation.jpg
-   :width: 600
+
+.. image:: gradient_descent_derivation.png
+   :width: 800
