@@ -37,7 +37,7 @@ The gradient descent is a method to descent from high to low error by using the 
    :width: 800
 
 
-The gradient descent with respect to the predicted line.
+The gradient descent with respect to the predicted line algorithm.
 NOTE that the derivative of the error with respect to w or b is highlighted in orange.
 The equation shows an instance of one point. However, this is the sum of all square errors. Thus, the sum of all gradient errors as denoted in the final calculation.
 
