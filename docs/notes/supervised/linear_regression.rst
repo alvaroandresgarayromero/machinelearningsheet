@@ -58,7 +58,7 @@ We fit a prediction line where x is the variable and y hat is the outcome:
 
     .. raw:: html
 
-        <img src="https://render.githubusercontent.com/render/math?math={\hat{y}}=w_{1}x%20+%20w_{2}">
+        <img src="https://render.githubusercontent.com/render/math?math={\hat{y}}=w_{1}x%2bw_{2}">
 
 In contrast, when the outcome to predict depends on more than one variable,
 then this is a n-dimensional problem.
@@ -66,4 +66,4 @@ We fit a prediction plane (multiple lines) where x's are the variables, and y ha
 
     .. raw:: html
 
-        <img src="https://render.githubusercontent.com/render/math?math={\hat{y}}=w_{1}x_{1}+w_{2}x_{2}+...+w_{n-1}x_{n-1}+w_{n}">
+        <img src="https://render.githubusercontent.com/render/math?math={\hat{y}}=w_{1}x_{1}%2bw_{2}x_{2}%2b...%2bw_{n-1}x_{n-1}%2bw_{n}">
