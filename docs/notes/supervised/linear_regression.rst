@@ -21,19 +21,16 @@ The smaller the error, the closer the predicted line is to the data
 
     .. raw:: html
 
-        <img src="https://render.githubusercontent.com/render/math?math=e^{i%20\pi}%20=%20-1">
-
-
         <img src="https://render.githubusercontent.com/render/math?math=ERROR=\frac{\sum_{i=n}^{N}|y[i]-{\hat{y}}[i]|}{N}">
-
 
 
 - Mean Square Error:
     The SQUARE distance between the point and line, where y is the point and y hat is the point of the line.
     The error is the average of areas of all the squares. A constant 1/2 is multiplied for convenience
 
-    .. math::
-     ERROR = \frac{ \sum_{i=n}^{N}(y[i]-{\hat {y}}[i])^2 }{2N}
+    .. raw:: html
+
+        <img src="https://render.githubusercontent.com/render/math?math=ERROR=\frac{\sum_{i=n}^{N}(y[i]-{\hat{y}}[i])^2}{2N}">
 
 
 Gradient (Derivative) Descent:
@@ -59,13 +56,14 @@ When the outcome to predict depends on one variable,
 then this is a 2 dimensional problem.
 We fit a prediction line where x is the variable and y hat is the outcome:
 
-.. math::
- {\hat {y}} = w_{1}x + w_{2}
+    .. raw:: html
 
+        <img src="https://render.githubusercontent.com/render/math?math={\hat{y}}=w_{1}x+w_{2}">
 
 In contrast, when the outcome to predict depends on more than one variable,
 then this is a n-dimensional problem.
 We fit a prediction plane (multiple lines) where x's are the variables, and y hat is the outcome:
 
-.. math::
- {\hat {y}} = w_{1}x_{1} + w_{2}x_{2} + ... + w_{n-1}x_{n-1} + w_{n}
+    .. raw:: html
+
+        <img src="https://render.githubusercontent.com/render/math?math={\hat{y}}=w_{1}x_{1}+w_{2}x_{2}+...+w_{n-1}x_{n-1}+w_{n}">
