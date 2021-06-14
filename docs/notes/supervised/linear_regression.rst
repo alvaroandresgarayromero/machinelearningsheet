@@ -19,9 +19,9 @@ The smaller the error, the closer the predicted line is to the data
     The VERTICAL distance between the point and line, where y is the point and y hat is the point of the line.
     The absolute distance makes sure that the distance stays positive regardless of been negative.
 
-.. raw:: html
-    <img src="https://render.githubusercontent.com/render/math?math=e^{i +\pi} =x+1">
+    .. raw:: html
 
+        <img src="https://render.githubusercontent.com/render/math?math=e^{i%20\pi}%20=%20-1">
 
     .. math::
      ERROR = \frac{ \sum_{i=n}^{N}|y[i]-{\hat {y}}[i]| }{N}
