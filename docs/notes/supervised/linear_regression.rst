@@ -19,15 +19,17 @@ The smaller the error, the closer the predicted line is to the data
     The VERTICAL distance between the point and line, where y is the point and y hat is the point of the line.
     The absolute distance makes sure that the distance stays positive regardless of been negative.
 
-.. math::
- ERROR = \frac{ \sum_{i=n}^{N}|y[i]'-y[i]| }{N}
+    .. math::
+     ERROR = \frac{ \sum_{i=n}^{N}|y[i]-{\hat {y}}[i]| }{N}
+
 
 - Mean Square Error:
     The SQUARE distance between the point and line, where y is the point and y hat is the point of the line.
     The error is the average of areas of all the squares. A constant 1/2 is multiplied for convenience
 
     .. math::
-     ERROR = \frac{ \sum_{i=n}^{N}({\hat {y}}[i]-y[i])^2 }{2N}
+     ERROR = \frac{ \sum_{i=n}^{N}(y[i]-{\hat {y}}[i])^2 }{2N}
+
 
 Gradient (Derivative) Descent:
 --------------------------------
@@ -52,13 +54,13 @@ When the outcome to predict depends on one variable,
 then this is a 2 dimensional problem.
 We fit a prediction line where x is the variable and y hat is the outcome:
 
-    .. math::
-     {\hat {y}} = \mbox{w}_{1}x + \mbox{w}_{2}
+.. math::
+ {\hat {y}} = w_{1}x + w_{2}
 
 
 In contrast, when the outcome to predict depends on more than one variable,
 then this is a n-dimensional problem.
 We fit a prediction plane (multiple lines) where x's are the variables, and y hat is the outcome:
 
-    .. math::
-     {\hat {y}} = \mbox{w}_{1}\mbox{x}_{1} + \mbox{w}_{2}\mbox{x}_{2} + ... + \mbox{w}_{n-1}\mbox{x}_{n-1} + \mbox{w}_{n}
+.. math::
+ {\hat {y}} = w_{1}x_{1} + w_{2}x_{2} + ... + w_{n-1}x_{n-1} + w_{n}

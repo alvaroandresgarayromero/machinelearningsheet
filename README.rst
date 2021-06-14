@@ -2,7 +2,14 @@
 Introduction
 =============
 
-Machine Learning cheatsheet was created as a way to study and collect code snippets
+Machine Learning cheatsheet was created as a way to study and collect code snippets.
+Some equation are written in rst format. You can use your prefer viewer or use
+
+.. raw:: html
+
+    <h9 align="center">
+    <a href="https://overbits.herokuapp.com/rsteditor/">Online RST file editor</a>
+    </h9>
 
 Cheat Sheet
 ============
