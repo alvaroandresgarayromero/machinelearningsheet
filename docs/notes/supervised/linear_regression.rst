@@ -20,7 +20,7 @@ The smaller the error, the closer the predicted line is to the data
     The absolute distance makes sure that the distance stays positive regardless of been negative.
 
     .. math::
-     ERROR = \frac{ \sum_{i=n}^{N}|{\hat {y}}[i]-y[i]| }{N}
+     ERROR = \frac{ \sum_{i=n}^{N}|y[i]'-y[i]| }{N}
 
 - Mean Square Error:
     The SQUARE distance between the point and line, where y is the point and y hat is the point of the line.
