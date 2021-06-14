@@ -58,7 +58,7 @@ We fit a prediction line where x is the variable and y hat is the outcome:
 
     .. raw:: html
 
-        <img src="https://render.githubusercontent.com/render/math?math={\hat{y}}=w_{1}x+w_{2}">
+        <img src="https://render.githubusercontent.com/render/math?math={\hat{y}}=w_{1}x%20+%20w_{2}">
 
 In contrast, when the outcome to predict depends on more than one variable,
 then this is a n-dimensional problem.
