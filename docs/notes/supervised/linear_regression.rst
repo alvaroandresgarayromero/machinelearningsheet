@@ -23,8 +23,9 @@ The smaller the error, the closer the predicted line is to the data
 
         <img src="https://render.githubusercontent.com/render/math?math=e^{i%20\pi}%20=%20-1">
 
-    .. math::
-     ERROR = \frac{ \sum_{i=n}^{N}|y[i]-{\hat {y}}[i]| }{N}
+
+        <img src="https://render.githubusercontent.com/render/math?math=ERROR=\frac{\sum_{i=n}^{N}|y[i]-{\hat{y}}[i]|}{N}">
+
 
 
 - Mean Square Error:
