@@ -3,12 +3,13 @@ Introduction
 =============
 
 Machine Learning cheatsheet was created as a way to study and collect code snippets.
-Some equation are written in rst format. You can use your prefer viewer or use
+Some equation are written in rst format. However, Github does not support inline formulas.
+A hack was used based on this discussion here:
 
 .. raw:: html
 
     <h9 align="center">
-    <a href="https://overbits.herokuapp.com/rsteditor/">Online RST file editor</a>
+    <a href="https://gist.github.com/a-rodin/fef3f543412d6e1ec5b6cf55bf197d7b">A hack for showing LaTeX formulas in Github markdown</a>
     </h9>
 
 Cheat Sheet
