@@ -46,3 +46,9 @@ run the python jupyter practice examples. To get started, follow the three main 
 
 - Docker will initialize the jupyter service and expose it to the host machine. In the CLI, the docker service will output the URL to open the jupyter notebook in the browser.
 - Lastly, the user can choose and edit in their desired editor. Any new or existing files that are added/modified are automatically updated in the active container and notebook (refresh browser).
+
+Acknowledgement
+================
+
+- Udacity Introduction to Machine Learning
+- Grokking Machine Learning Book

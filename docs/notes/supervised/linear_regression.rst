@@ -100,12 +100,12 @@ Parameter: Any parameter that the model creates or modified during the training 
     - A good model is one that doesn't underfit or overfit, and is able to make good predictions on new data that it hasn't seen
         - Ex: A model that produces a polynomial line of degree of 2 to fit a quadratic dataset.
 
-    A technique to not underfit or overfit is to slit the dataset with
+    A technique to not underfit or overfit is to split the dataset with
     training, validation and testing sets (60-20-20 split or an 80-10-10 split)
 
     - The training set is used to train all the models.
 
-    - The validation set is used to determine which model to use:
+    - The validation set is used to determine which model to use
         - Underfitting model is found when the error with respect to the validation data is large (performs poorly).
         - Overfitting model is found when the error with respect to the validation data is large (performs poorly).
         - A good model is found when the error with respect to the validation data is low (does well).
@@ -114,6 +114,11 @@ Parameter: Any parameter that the model creates or modified during the training 
 
     In summary, if both (training and validation) errors are high, then it underfits. If both errors are low, then it is a good
     model. If the training error is low and the testing error is high, then it overfits.
+
+    - model complexity graph:
+
+    .. image:: examples/scikit-polynomial-regression/model-complexity-graph.png
+       :width: 800
 
 Regularization:
 ----------------
