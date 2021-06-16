@@ -82,13 +82,12 @@ This parameter is determined prior to training the model.
 
 
 Hyperparamater: Any parameter set before the training process
-
 Parameter: Any parameter that the model creates or modified during the training process
 
 - Underfitting vs Overfitting:
 
-The number of degree of a polynomial is determined by making sure the model creates a line that doesn't
-underfit or overfit the datasets.
+    The number of degree of a polynomial is determined by making sure the model creates a line that doesn't
+    underfit or overfit the datasets.
 
     - Underfitting occurs when the model is too simple in comparison to the complex data, and the model is never able to learn the complexities of the dataset
         - Ex: A model that produces a line to fit a quadratic dataset. The line misses some datasets
@@ -96,9 +95,6 @@ underfit or overfit the datasets.
         - Ex: A model that produces a polynomial line of degree of 10 to fit a quadratic dataset. The line hits all datasets, but misses the point that the dataset is quadratic
     - A good model is one that doesn't underfit or overfit, and is able to make good predictions on new data that it hasn't seen
         - Ex: A model that produces a polynomial line of degree of 2 to fit a quadratic dataset.
-
-How to determine how many degree of freedoms?
-
 
     .. raw:: html
 
