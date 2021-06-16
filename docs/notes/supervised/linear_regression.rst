@@ -89,6 +89,10 @@ Parameter: Any parameter that the model creates or modified during the training 
     The number of degree of a polynomial is determined by making sure the model creates a line that doesn't
     underfit or overfit the datasets.
 
+    .. raw:: html
+
+        <img src="https://render.githubusercontent.com/render/math?math={\hat{y}}=w_{1}x_{1}%2bw_{2}x_{2}%2b...%2bw_{n-1}x_{n-1}%2bb">
+
     - Underfitting occurs when the model is too simple in comparison to the complex data, and the model is never able to learn the complexities of the dataset
         - Ex: A model that produces a line to fit a quadratic dataset. The line misses some datasets
     - Overfitting occurs when the model is too complex in comparison to the simple data, and the model memorizes the data instead of learning it well.
@@ -96,9 +100,20 @@ Parameter: Any parameter that the model creates or modified during the training 
     - A good model is one that doesn't underfit or overfit, and is able to make good predictions on new data that it hasn't seen
         - Ex: A model that produces a polynomial line of degree of 2 to fit a quadratic dataset.
 
-    .. raw:: html
+    A technique to not underfit or overfit is to slit the dataset with
+    training, validation and testing sets (60-20-20 split or an 80-10-10 split)
 
-        <img src="https://render.githubusercontent.com/render/math?math={\hat{y}}=w_{1}x_{1}%2bw_{2}x_{2}%2b...%2bw_{n-1}x_{n-1}%2bb">
+    - The training set is used to train all the models.
+
+    - The validation set is used to determine which model to use:
+        - Underfitting model is found when the error with respect to the validation data is large (performs poorly).
+        - Overfitting model is found when the error with respect to the validation data is large (performs poorly).
+        - A good model is found when the error with respect to the validation data is low (does well).
+
+    - The testing set is used to know how well the model did. If this fails, start from scratch.
+
+    In summary, if both (training and validation) errors are high, then it underfits. If both errors are low, then it is a good
+    model. If the training error is low and the testing error is high, then it overfits.
 
 Regularization:
 ----------------
