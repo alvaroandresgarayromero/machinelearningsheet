@@ -12,7 +12,7 @@ Linear Regression
 
 Error Function:
 -------------------
-The error between the point and the point of the predicted line in the y-axis.
+The error between the point and the point of the predicted line in the y-axis (misclassified points).
 The smaller the error, the closer the predicted line is to the data
 
 - Mean Absolute Error:
@@ -52,18 +52,64 @@ The equation shows an instance of one point. However, this is the sum of all squ
 Multiple Linear Regression:
 ---------------------------
 
+A technique for when you are comparing more than two variables using linear regression
+
+
 When the outcome to predict depends on one variable,
-then this is a 2 dimensional problem.
+then this is a 2 dimensional space, and 1 regression line problem
 We fit a prediction line where x is the variable and y hat is the outcome:
 
     .. raw:: html
 
-        <img src="https://render.githubusercontent.com/render/math?math={\hat{y}}=w_{1}x%2bw_{2}">
+        <img src="https://render.githubusercontent.com/render/math?math={\hat{y}}=w_{1}x%2bb">
 
 In contrast, when the outcome to predict depends on more than one variable,
-then this is a n-dimensional problem.
+then this is a n-dimensional space, and n-1 dimensional hyperplane problem
 We fit a prediction plane (multiple lines) where x's are the variables, and y hat is the outcome:
 
     .. raw:: html
 
-        <img src="https://render.githubusercontent.com/render/math?math={\hat{y}}=w_{1}x_{1}%2bw_{2}x_{2}%2b...%2bw_{n-1}x_{n-1}%2bw_{n}">
+        <img src="https://render.githubusercontent.com/render/math?math={\hat{y}}=w_{1}x_{1}%2bw_{2}x_{2}%2b...%2bw_{n-1}x_{n-1}%2bb">
+
+Polynomial Regression:
+-----------------------
+
+A technique for relationships between variables (dataset) that aren't linear.
+
+The process to train a polynomial regression model is very similar to linear regression model.
+The main difference is that a new parameters (hyperparameters) are introduced: the degree of a polynomial.
+This parameter is determined prior to training the model.
+
+
+Hyperparamater: Any parameter set before the training process
+
+Parameter: Any parameter that the model creates or modified during the training process
+
+- Underfitting vs Overfitting:
+
+The number of degree of a polynomial is determined by making sure the model creates a line that doesn't
+underfit or overfit the datasets.
+
+    - Underfitting occurs when the model is too simple in comparison to the complex data, and the model is never able to learn the complexities of the dataset
+        - Ex: A model that produces a line to fit a quadratic dataset. The line misses some datasets
+    - Overfitting occurs when the model is too complex in comparison to the simple data, and the model memorizes the data instead of learning it well.
+        - Ex: A model that produces a polynomial line of degree of 10 to fit a quadratic dataset. The line hits all datasets, but misses the point that the dataset is quadratic
+    - A good model is one that doesn't underfit or overfit, and is able to make good predictions on new data that it hasn't seen
+        - Ex: A model that produces a polynomial line of degree of 2 to fit a quadratic dataset.
+
+How to determine how many degree of freedoms?
+
+
+    .. raw:: html
+
+        <img src="https://render.githubusercontent.com/render/math?math={\hat{y}}=w_{1}x_{1}%2bw_{2}x_{2}%2b...%2bw_{n-1}x_{n-1}%2bb">
+
+Regularization:
+----------------
+
+A regularization technique will remove features from a model (by setting their coefficients to zero) if the penalty for removing them is small.
+
+
+
+Scaling:
+---------

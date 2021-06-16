@@ -4,7 +4,7 @@ Introduction
 
 Machine Learning cheatsheet was created as a way to study and collect code snippets.
 Some equation are written in rst format. However, Github does not support inline formulas.
-A hack was used based on this discussion here:
+A hack was used to make them visible based on this discussion here:
 
 .. raw:: html
 
