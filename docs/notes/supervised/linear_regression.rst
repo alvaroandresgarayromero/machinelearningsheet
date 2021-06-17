@@ -133,6 +133,7 @@ as the sum of the coefficients in L1 or L2 norm, with the exception of the const
     - Error function: Absolute error or Square error
 - Complexity measurement (REGULARIZATION TERM):
     Warning: Scale before regularization occurs if the features (datasets) vary in dynamic range by a lot. For example, if one is between 0-10 and another is between 0-1,000,000, then the small feature will be punished the most
+
     - Lasso regression: Creates a model with fewer coefficients (makes most zero) (more simple model)
         - L1 norm: the sum of the absolute values of the coefficients
     - Ridge regression: Creates a model with smaller coefficients, but rarely turn them into zero (more complex model)
@@ -141,9 +142,9 @@ as the sum of the coefficients in L1 or L2 norm, with the exception of the const
     - Lambda: a hyperparameter (a heuristic knob) to attenuate the REGULARIZATION TERM. Values to try: 10, 1, 0.1, 0.01
 
 
-REGULARIZATION ERROR = REGRESSION ERROR + lambda*REGULARIZATION TERM
-Lasso regression error = REGRESSION ERROR + lambda*( L1 norm )
-Ridge regression error = REGRESSION ERROR + lambda*( L2 norm )
+- Equation: REGULARIZATION ERROR = REGRESSION ERROR + lambda*REGULARIZATION TERM
+    Lasso regression error = REGRESSION ERROR + lambda*( L1 norm )
+    Ridge regression error = REGRESSION ERROR + lambda*( L2 norm )
 
 Regularization error creates a model with low error (performance), and low complexity
 
