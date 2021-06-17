@@ -112,6 +112,7 @@ Parameter: Any parameter that the model creates or modified during the training 
 
     - The testing set is used to know how well the model did. If this fails, start from scratch.
 
+
     In summary, if both (training and validation) errors are high, then it underfits. If both errors are low, then it is a good
     model. If the training error is low and the testing error is high, then it overfits.
 
@@ -123,9 +124,43 @@ Parameter: Any parameter that the model creates or modified during the training 
 Regularization:
 ----------------
 
-A regularization technique will remove features from a model (by setting their coefficients to zero) if the penalty for removing them is small.
+Regularization is a technique used to avoid overfitting the models.
+The technique measure both performance and complexity of the model at the same time.
+Performance is measured as the error with respect to the dataset while complexity is measured
+as the sum of the coefficients in L1 or L2 norm, with the exception of the constant coefficient.
+
+- Performance measured (REGRESSION ERROR):
+    - Error function: Absolute error or Square error
+- Complexity measurement (REGULARIZATION TERM):
+    Warning: Scale before regularization occurs if the features (datasets) vary in dynamic range by a lot. For example, if one is between 0-10 and another is between 0-1,000,000, then the small feature will be punished the most
+    - Lasso regression: Creates a model with fewer coefficients (makes most zero) (more simple model)
+        - L1 norm: the sum of the absolute values of the coefficients
+    - Ridge regression: Creates a model with smaller coefficients, but rarely turn them into zero (more complex model)
+        - L2 norm: the sum of the square of the coefficients
+- Lambda (REGULARIZATION PARAMETER)
+    - Lambda: a hyperparameter (a heuristic knob) to attenuate the REGULARIZATION TERM. Values to try: 10, 1, 0.1, 0.01
 
 
+REGULARIZATION ERROR = REGRESSION ERROR + lambda*REGULARIZATION TERM
+Lasso regression error = REGRESSION ERROR + lambda*( L1 norm )
+Ridge regression error = REGRESSION ERROR + lambda*( L2 norm )
+
+Regularization error creates a model with low error (performance), and low complexity
+
+    - Underfitting
+        - REGULARIZATION ERROR = 1000 unitless error + 1 complexity error = 10001
+    - Ideal Model
+        - REGULARIZATION ERROR = 1 unitless error + 100 complexity error= 101 <--- smallest
+    - Overfitting
+        - REGULARIZATION ERROR = 0 unitless error + 1000 complexity error= 1000
 
 Scaling:
 ---------
+
+- Standardizing:
+    df["height_standard"] = (df["height"] - df["height"].mean()) / df["height"].std()
+
+- Normalizing (between 0 to 1):
+    df["height_normal"] = (df["height"] - df["height"].min()) /     \
+                          (df["height"].max() - df['height'].min())`
+
