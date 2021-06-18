@@ -52,4 +52,7 @@ Similarly, the general form of the equation for a n-1 dimensional hyperplane in 
         <img src="https://render.githubusercontent.com/render/math?math=ax_1%2bbx_2%2bw_nx_n%2bd=0">
 
 .. image:: examples/perceptron/perception_diagram.png
-   :width: 800
+   :width: 200
+
+.. image:: examples/perceptron/perception_diagram.png
+   :width: 400
