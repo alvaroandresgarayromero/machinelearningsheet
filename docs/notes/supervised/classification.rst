@@ -54,5 +54,5 @@ Similarly, the general form of the equation for a n-1 dimensional hyperplane in 
 .. image:: examples/perceptron/perception_diagram.png
    :width: 200
 
-.. image:: examples/perceptron/perception_diagram.png
+.. image:: examples/perceptron/perception_diagram_v2.png
    :width: 400
