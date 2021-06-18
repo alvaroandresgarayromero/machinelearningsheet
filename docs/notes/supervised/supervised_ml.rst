@@ -29,10 +29,10 @@ There are two categories of supervised machine learning:
 Regression Models
 ------------------
 
-- 'Regression Model Notes <linear_regression.rst>`_
-
+- `Regression Model Notes <linear_regression.rst>`_
 
 Classification Models
 -----------------------
 
 - `Classification Model Notes <classification.rst>`_
+
