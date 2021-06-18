@@ -141,10 +141,9 @@ as the sum of the coefficients in L1 or L2 norm, with the exception of the const
 - Lambda (REGULARIZATION PARAMETER)
     - Lambda: a hyperparameter (a heuristic knob) to attenuate the REGULARIZATION TERM. Values to try: 10, 1, 0.1, 0.01
 
-
 - Equation: REGULARIZATION ERROR = REGRESSION ERROR + lambda*REGULARIZATION TERM
-    Lasso regression error = REGRESSION ERROR + lambda*( L1 norm )
-    Ridge regression error = REGRESSION ERROR + lambda*( L2 norm )
+    - Lasso regression error = REGRESSION ERROR + lambda*( L1 norm )
+    - Ridge regression error = REGRESSION ERROR + lambda*( L2 norm )
 
 Regularization error creates a model with low error (performance), and low complexity
 

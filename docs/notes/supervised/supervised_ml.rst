@@ -26,7 +26,13 @@ There are two categories of supervised machine learning:
     For example, predict the price of a house
 
 
-Linear Regression
+Regression Models
 ------------------
 
-- `Linear Regression Notes <linear_regression.rst>`_
+- 'Regression Model Notes <linear_regression.rst>`_
+
+
+Classification Models
+-----------------------
+
+- `Classification Model Notes <classification.rst>`_
