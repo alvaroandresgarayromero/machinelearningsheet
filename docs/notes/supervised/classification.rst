@@ -31,10 +31,10 @@ that best separates the datasets
 
 
 The equation also defines the a positive and negative zone step(x) is a step function
-- step(x) = 1 if x >= 0
-- step(x) = 1 if x < 0
-
 where the positive/negative classification can be expressed as
+
+    - step(x) = 1 if x >= 0
+    - step(x) = 1 if x < 0
 
     .. raw:: html
 
