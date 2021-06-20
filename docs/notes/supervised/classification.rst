@@ -51,8 +51,30 @@ Similarly, the general form of the equation for a n-1 dimensional hyperplane in 
 
         <img src="https://render.githubusercontent.com/render/math?math=ax_1%2bbx_2%2bw_nx_n%2bd=0">
 
-.. image:: examples/perceptron/perception_diagram.png
-   :width: 200
-
 .. image:: examples/perceptron/perception_diagram_v2.png
    :width: 400
+
+
+- Move a line closer to the point where the weight is now been represented with w:
+
+    .. raw:: html
+
+        <img src="https://render.githubusercontent.com/render/math?math=x_1w_1%2bx_2w_2+b=0">
+
+    - If the point (x_1,x_2) is classified negative, but the point has a positive label, add to move the line closer
+         .. raw:: html
+
+            <img src="https://render.githubusercontent.com/render/math?math=Classified%20Negative:%20{\hat{y}}=0">
+
+            <img src="https://render.githubusercontent.com/render/math?math=w_i=w_i%2bx_i*learning_rate">
+
+            <img src="https://render.githubusercontent.com/render/math?math=b=b%2bb*learning_rate">
+
+    - If the point (x_1,x_2) is classified positive, but it has a negative label, subtract to move the line closer
+         .. raw:: html
+
+            <img src="https://render.githubusercontent.com/render/math?math=Classified%20Positive:%20{\hat{y}}=1">
+
+            <img src="https://render.githubusercontent.com/render/math?math=w_i=w_i-x_i*learning_rate">
+
+            <img src="https://render.githubusercontent.com/render/math?math=b=b-b*learning_rate">
