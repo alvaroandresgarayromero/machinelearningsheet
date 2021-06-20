@@ -59,16 +59,23 @@ Similarly, the general form of the equation for a n-1 dimensional hyperplane in 
 
     .. raw:: html
 
-        <img src="https://render.githubusercontent.com/render/math?math=x_1w_1%2bx_2w_2+b=0">
+        <img src="https://render.githubusercontent.com/render/math?math=x_1w_1%2bx_2w_2%2bb=0">
+
+
+    .. raw:: html
+
+        <img src="https://render.githubusercontent.com/render/math?math={\hat{y}}=step(ax_1%2bbx_2%2bc)">
 
     - If the point (x_1,x_2) is classified negative, but the point has a positive label, add to move the line closer
          .. raw:: html
 
             <img src="https://render.githubusercontent.com/render/math?math=Classified%20Negative:%20{\hat{y}}=0">
 
-        .. raw:: html
+
+         .. raw:: html
 
             <img src="https://render.githubusercontent.com/render/math?math=w_i=w_i%2bx_i*learningRate">
+
 
          .. raw:: html
 
@@ -79,9 +86,11 @@ Similarly, the general form of the equation for a n-1 dimensional hyperplane in 
 
             <img src="https://render.githubusercontent.com/render/math?math=Classified%20Positive:%20{\hat{y}}=1">
 
+
          .. raw:: html
 
             <img src="https://render.githubusercontent.com/render/math?math=w_i=w_i-x_i*learningRate">
+
 
          .. raw:: html
 
