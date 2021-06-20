@@ -57,12 +57,13 @@ Similarly, the general form of the equation for a n-1 dimensional hyperplane in 
 
 - Move a line closer to the point where the weight is now been represented with w:
 
-    .. raw:: html
+.. raw:: html
 
-        <img src="https://render.githubusercontent.com/render/math?math=x_1w_1%2bx_2w_2%2bb=0">
+    <img src="https://render.githubusercontent.com/render/math?math=x_1w_1%2bx_2w_2%2bb=0">
 
+.. raw:: html
 
-        <img src="https://render.githubusercontent.com/render/math?math={\hat{y}}=step()">
+    <img src="https://render.githubusercontent.com/render/math?math={\hat{y}}=step()">
 
     - If the point (x_1,x_2) is classified negative, but the point has a positive label, add to move the line closer
          .. raw:: html
