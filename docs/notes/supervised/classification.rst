@@ -66,15 +66,23 @@ Similarly, the general form of the equation for a n-1 dimensional hyperplane in 
 
             <img src="https://render.githubusercontent.com/render/math?math=Classified%20Negative:%20{\hat{y}}=0">
 
-            <img src="https://render.githubusercontent.com/render/math?math=w_i=w_i%2bx_i*learning_rate">
+        .. raw:: html
 
-            <img src="https://render.githubusercontent.com/render/math?math=b=b%2bb*learning_rate">
+            <img src="https://render.githubusercontent.com/render/math?math=w_i=w_i%2bx_i*learningRate">
+
+         .. raw:: html
+
+            <img src="https://render.githubusercontent.com/render/math?math=b=b%2bb*learningRate">
 
     - If the point (x_1,x_2) is classified positive, but it has a negative label, subtract to move the line closer
          .. raw:: html
 
             <img src="https://render.githubusercontent.com/render/math?math=Classified%20Positive:%20{\hat{y}}=1">
 
-            <img src="https://render.githubusercontent.com/render/math?math=w_i=w_i-x_i*learning_rate">
+         .. raw:: html
 
-            <img src="https://render.githubusercontent.com/render/math?math=b=b-b*learning_rate">
+            <img src="https://render.githubusercontent.com/render/math?math=w_i=w_i-x_i*learningRate">
+
+         .. raw:: html
+
+            <img src="https://render.githubusercontent.com/render/math?math=b=b-b*learningRate">
