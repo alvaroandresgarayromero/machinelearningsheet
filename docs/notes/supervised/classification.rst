@@ -59,11 +59,11 @@ Similarly, the general form of the equation for a n-1 dimensional hyperplane in 
 
 .. raw:: html
 
-    <img src="https://render.githubusercontent.com/render/math?math=x_1w_1%2bx_2w_2%2bb=LINEAR_FUNCTION">
+    <img src="https://render.githubusercontent.com/render/math?math=linearfunct=x_1w_1%2bx_2w_2%2bb">
 
 .. raw:: html
 
-    <img src="https://render.githubusercontent.com/render/math?math={\hat{y(LINEAR_FUNCTION)}}=step(LINEAR_FUNCTION)">
+    <img src="https://render.githubusercontent.com/render/math?math={\hat{y(linearfunct)}}=step(linearfunct)">
 
 
 - If the point (x_1,x_2) is classified negative, but the point has a positive label, add to move the line closer
