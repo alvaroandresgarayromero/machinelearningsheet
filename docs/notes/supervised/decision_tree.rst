@@ -64,15 +64,15 @@ In summary, a threshold needs to be determined that best predicts the labeled da
     - Low entropy - all elements are similar/less diverse (preferred)
     - High entropy - all elements are different/more diverse
 
+    - Entropy equation is the following where probability p_n is how many times a in m element
 
-    .. raw:: html
+.. raw:: html
 
-        <img src="https://render.githubusercontent.com/render/math?math=Entropy=-p_1log_2(p_1)-p_2log_2(p_2)-...p_nlog_2(p_n)">
+    <img src="https://render.githubusercontent.com/render/math?math=Entropy=-p_1log_2(p_1)-p_2log_2(p_2)-...p_nlog_2(p_n)">
 
-    where probability p_n is how many times a in m element
-    .. raw:: html
+.. raw:: html
 
-        <img src="https://render.githubusercontent.com/render/math?math=p_n=\frac{a_n}{m}">
+    <img src="https://render.githubusercontent.com/render/math?math=p_n=\frac{a_n}{m}">
 
 
 Classification Decision Tree
