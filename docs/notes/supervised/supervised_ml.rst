@@ -39,5 +39,5 @@ Classification Models
 Decision Trees
 ---------------
 
-- `Decision Tree Notes <decision_trees.rst>`_
+- `Decision Tree Notes <decision_tree.rst>`_
 

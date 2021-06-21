@@ -27,15 +27,20 @@ leaf nodes are nodes with no edges.
 
 - DECISION TREE: A machine learning model based on yes/no questions and represented by a binary tree.
 The tree has a root node, decision nodes, leaf nodes, and branches.
+
 - ROOT NODE: The topmost node of the tree. It contains the first yes/no question. For convenience we refer to
 it as the root.
+
 - DECISION NODE: Each yes/no question in our model is represented by a decision node, with two branches
 emanating from it (one for the ‘yes’ answer, and one for the ‘no’ answer).
+
 - LEAF NODE: A node that has no branches emanating from it. These represent the decisions we take after
 traversing the tree. For convenience, we refer to them as leaves.
+
 - BRANCH: The two edges emanating from each decision node, corresponding to the ‘yes’ and ‘no’ answers to
 the question in the node. By convention, the branch to the left corresponds to ‘yes’, and the branch to the right
 to ‘no’.
+
 - DEPTH: The number of levels in the decision tree. Alternatively, it is the number of branches on the longest
 path from the root node to a leaf node.
 
@@ -48,10 +53,6 @@ How to determine decision nodes
 - Entropy:
 
 - Gini impurity:
-
-
-Entropy
---------
 
 
 Classification Decision Tree
