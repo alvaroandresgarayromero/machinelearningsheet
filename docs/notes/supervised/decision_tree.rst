@@ -37,6 +37,7 @@ How to determine decision nodes
 
 - Accuracy:
     test
+    test2
 
 - Entropy:
 
