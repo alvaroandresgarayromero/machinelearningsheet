@@ -54,6 +54,8 @@ Similarly, the general form of the equation for a n-1 dimensional hyperplane in 
 .. image:: examples/perceptron/perception_diagram_v2.png
    :width: 400
 
+Perceptron Classifier Trick:
+----------------------------
 
 - Move a line closer to the point where the weight is now been represented with w:
 
