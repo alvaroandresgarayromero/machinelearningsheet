@@ -68,11 +68,26 @@ In summary, a threshold needs to be determined that best predicts the labeled da
     - Low entropy - all elements are similar/less diverse (preferred)
     - High entropy - all elements are different/more diverse
 
+
     .. raw:: html
 
         <img src="https://render.githubusercontent.com/render/math?math=Entropy=-p_1log_2(p_1)-p_2log_2(p_2)-...p_nlog_2(p_n)">
 
 
+    .. raw:: html
+
+        <img src="https://render.githubusercontent.com/render/math?math=EntropyAvg=\frac{Entropy}{m}">
+
+- Informational Gain
+
+    .. raw:: html
+
+        <img src="https://render.githubusercontent.com/render/math?math=DeltaChild=\frac{m}{m+n}Entropy(child_1)%2b\frac{n}{m+n}Entropy(child_2)">
+
+
+    .. raw:: html
+
+        <img src="https://render.githubusercontent.com/render/math?math=InformatinalGain=Entropy(Parent)-DeltaChild">
 
 Classification Decision Tree
 -----------------------------
