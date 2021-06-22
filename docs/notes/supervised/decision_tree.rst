@@ -66,35 +66,35 @@ In summary, a threshold needs to be determined that best predicts the labeled da
 
     - Probability equation where a is the classification of elements, and m is total elements
 
-    .. raw:: html
+        .. raw:: html
 
-        <img src="https://render.githubusercontent.com/render/math?math=p_n=\frac{a_n}{m}">
+            <img src="https://render.githubusercontent.com/render/math?math=p_n=\frac{a_n}{m}">
 
     - Entropy equation
 
-    .. raw:: html
+        .. raw:: html
 
-        <img src="https://render.githubusercontent.com/render/math?math=Entropy=-p_1log_2(p_1)-p_2log_2(p_2)-...p_nlog_2(p_n)">
+            <img src="https://render.githubusercontent.com/render/math?math=Entropy=-p_1log_2(p_1)-p_2log_2(p_2)-...p_nlog_2(p_n)">
 
     - Entropy Average is calculated as
 
-    .. raw:: html
+        .. raw:: html
 
-        <img src="https://render.githubusercontent.com/render/math?math=EntropyAvg=\frac{Entropy}{m}">
+            <img src="https://render.githubusercontent.com/render/math?math=EntropyAvg=\frac{Entropy}{m}">
 
 - Informational Gain
 
     - Delta Child is calculated as
 
-    .. raw:: html
+        .. raw:: html
 
-        <img src="https://render.githubusercontent.com/render/math?math=DeltaChild=\frac{m}{m%2bn}Entropy(child_1)%2b\frac{n}{m%2bn}Entropy(child_2)">
+            <img src="https://render.githubusercontent.com/render/math?math=DeltaChild=\frac{m}{m%2bn}Entropy(child_1)%2b\frac{n}{m%2bn}Entropy(child_2)">
 
     - Information gain equation
 
-    .. raw:: html
+        .. raw:: html
 
-        <img src="https://render.githubusercontent.com/render/math?math=InformatinalGain=Entropy(Parent)-DeltaChild">
+            <img src="https://render.githubusercontent.com/render/math?math=InformatinalGain=Entropy(Parent)-DeltaChild">
 
 Classification Decision Tree
 -----------------------------
