@@ -61,18 +61,22 @@ In summary, a threshold needs to be determined that best predicts the labeled da
 
 - Entropy: A measure of diversity in a dataset where probability is how many times a in m element
 
-        .. raw:: html
-
-            <img src="https://render.githubusercontent.com/render/math?math=p_n=\frac{a_n}{m}">
-
     - Low entropy - all elements are similar/less diverse (preferred)
     - High entropy - all elements are different/more diverse
 
+    - Probability equation where a is the classification of elements, and m is total elements
 
-        .. raw:: html
+    .. raw:: html
 
-            <img src="https://render.githubusercontent.com/render/math?math=Entropy=-p_1log_2(p_1)-p_2log_2(p_2)-...p_nlog_2(p_n)">
+        <img src="https://render.githubusercontent.com/render/math?math=p_n=\frac{a_n}{m}">
 
+    - Entropy equation
+
+    .. raw:: html
+
+        <img src="https://render.githubusercontent.com/render/math?math=Entropy=-p_1log_2(p_1)-p_2log_2(p_2)-...p_nlog_2(p_n)">
+
+    - Entropy Average is calculated as
 
     .. raw:: html
 
@@ -80,9 +84,13 @@ In summary, a threshold needs to be determined that best predicts the labeled da
 
 - Informational Gain
 
+    - Delta Child is calculated as
+
     .. raw:: html
 
         <img src="https://render.githubusercontent.com/render/math?math=DeltaChild=\frac{m}{m%2bn}Entropy(child_1)%2b\frac{n}{m%2bn}Entropy(child_2)">
+
+    - Information gain equation
 
     .. raw:: html
 
