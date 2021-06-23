@@ -41,3 +41,7 @@ Decision Trees
 
 - `Decision Tree Notes <decision_tree.rst>`_
 
+Naive Bayes
+-------------
+
+- `Naive Bayes Notes <naive_bayes_model.rst>`_

@@ -61,14 +61,14 @@ In summary, a threshold needs to be determined that best predicts the labeled da
 
 - Entropy: A measure of diversity in a dataset where probability is how many times a in m element
 
-    - Low entropy - all elements are similar/less diverse (preferred)
+    - Low entropy - all elements are similar/less diverse (preferred, better grouped)
     - High entropy - all elements are different/more diverse
 
-    - Probability equation where a is the classification of elements, and m is total elements
+    - Probability equation where a is the ratio of classification_i elements, and m is total elements
 
         .. raw:: html
 
-            <img src="https://render.githubusercontent.com/render/math?math=p_n=\frac{a_n}{m}">
+            <img src="https://render.githubusercontent.com/render/math?math=p_i=\frac{a_i}{m}">
 
     - Entropy equation
 
@@ -84,7 +84,14 @@ In summary, a threshold needs to be determined that best predicts the labeled da
 
 - Informational Gain
 
-    - Delta Child is calculated as
+    The gain of information measures entropy on the parent node, and entropy of the children node.
+    Picking the largest information gain will yield the best decision tree.
+
+    - Low Informational Gain = the parent node will have high entropy - the children nodes will have high entropy
+    - High Informational Gain = the parent node will have high entropy - the children nodes will have low entropy
+
+
+    - Delta Child where m is the total elements in child 1 and n is the total elements in child 2, where m+n is the total elements
 
         .. raw:: html
 
@@ -95,6 +102,16 @@ In summary, a threshold needs to be determined that best predicts the labeled da
         .. raw:: html
 
             <img src="https://render.githubusercontent.com/render/math?math=InformatinalGain=Entropy(Parent)-DeltaChild">
+
+
+Hyperparameters
+-----------------
+
+- max_depth: The maximum number of levels in the tree.
+
+- min_samples_leaf: The minimum number of samples allowed in a leaf.
+
+- min_samples_split: The minimum number of samples required to split an internal node.
 
 Classification Decision Tree
 -----------------------------
