@@ -41,3 +41,13 @@ event. Probability of A given R, and Probability of B given R
 
 .. image:: examples/bayes_theorem/probability_of_patient_test_positive.png
    :width: 800
+
+Naive Bayes
+--------------
+
+- 1. Conditional Probability to calculate the value proportional probability:
+
+.. image:: examples/bayes_theorem/naive-bayes-conditional-probability.png
+   :width: 800
+
+- 2. Normalize between 0-1 to get the actual probability n/(n+m) and m/(n+m):
