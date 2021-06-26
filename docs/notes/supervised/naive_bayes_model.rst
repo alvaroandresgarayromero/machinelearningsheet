@@ -67,4 +67,5 @@ probabilistic distributions of more than one features.
 
 .. raw:: html
 
-    <img src="https://render.githubusercontent.com/render/math?math=P(x_1,...,x_n)=\sum_{i=0}^{N}P(y_i)P(x_1,...,x_n | y_i)=\sum_{i=0}^{N}P(y_i)P(x_1 | y_i)P(x_2 | y_i)...P(x_n | y_i)"
+    <img src="https://render.githubusercontent.com/render/math?math=P(x_1,...,x_n)=\sum_{i=0}^{N}P(y_i)P(x_1,...,x_n| y_i)=\sum_{i=0}^{N}P(y_i)P(x_1| y_i)P(x_2 | y_i)...P(x_n| y_i)">
+"
