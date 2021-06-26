@@ -45,9 +45,18 @@ event. Probability of A given R, and Probability of B given R
 Naive Bayes
 --------------
 
-- 1. Conditional Probability to calculate the value proportional probability:
+Naive Bayes' is an extension of Bayes' theorem
+that assumes that all the features are independent of each other.
+It calculates the probability of a certain event
+happening based on the joint
+probabilistic distributions of more than one features.
+
+- 1. Conditional Probability to calculate the value proportional probability where P(A|B) is the posterior probability, and A is the event, and B can be multiple features:
 
 .. image:: examples/bayes_theorem/naive-bayes-conditional-probability.png
+   :width: 800
+
+.. image:: examples/bayes_theorem/naivebayesequation.png
    :width: 800
 
 - 2. Normalize between 0-1 to get the actual probability n/(n+m) and m/(n+m):
