@@ -56,14 +56,14 @@ probabilistic distributions of more than one features.
 .. image:: examples/bayes_theorem/naive-bayes-conditional-probability.png
    :width: 800
 
-- 2. Normalize between 0-1 to get the actual probability. The equation below shows A is y, and B as x:
+- 2. Normalizing is done by adding all the class variables (events) y and then taking the ratio of an instance of a class variable y. Below is the entire equation for one y instance with normalization done between 0-1. The equation below shows A as y, and B as x:
 
 
 .. raw:: html
 
     <img src="https://render.githubusercontent.com/render/math?math=P(y | x_1,...,x_n)=\frac{P(y)P(x_1,...,x_n | y)}{P(x_1,...,x_n)}=\frac{P(y)P(x_1 | y)P(x_2 | y)...P(x_n | y)}{P(x_1,...,x_n)}">
 
-Normalizing is done by adding all the class variables (events) y and then taking the ratio of an instance of a class variable y. Below is the sum of all y's and above is the entire equation for one y instance with normalization between 0 to 1
+- 2.a. The equation below is the sum of all y instances. This is used on the equation above in order to be able to normalize
 
 .. raw:: html
 
