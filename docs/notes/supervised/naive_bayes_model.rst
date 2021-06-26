@@ -56,7 +56,11 @@ probabilistic distributions of more than one features.
 .. image:: examples/bayes_theorem/naive-bayes-conditional-probability.png
    :width: 800
 
-.. image:: examples/bayes_theorem/naivebayesequation.png
-   :width: 800
+.. raw:: html
 
+    <img src="https://render.githubusercontent.com/render/math?math=P(y_i | x_1,...,x_n)=\frac{P(y_i)P(x_1,...,x_n | y_i)}{P(x_1,...,x_n)}=\frac{P(y_i)P(x_1 | y)P(x_2 | y)...P(x_n | y_i)}{P(x_1,...,x_n)}">
+
+.. raw:: html
+
+    <img src="https://render.githubusercontent.com/render/math?math=P(x_1,...,x_n)=\sum_{i=0}^{N}P(y_i)P(x_1,...,x_n | y_i)=\sum_{i=0}^{N}P(y_i)P(x_1 | y_i)P(x_2 | y_i)...P(x_n | y_i)"
 - 2. Normalize between 0-1 to get the actual probability n/(n+m) and m/(n+m):
