@@ -31,7 +31,10 @@ SVM Error Function
 The goal is to minimize the error function by using gradient descent
 in order to maximize classification and distance between the lines
 
-Error = Classification Error + Margin Error
+.. raw:: html
+
+    <img src="https://render.githubusercontent.com/render/math?math=Error=ClassificationError+MarginError">
+
 
 - Classification Error
 
@@ -61,4 +64,19 @@ Error = Classification Error + Margin Error
        :width: 400
 
     .. image:: examples/support_vector_machines/marginError2.png
+       :width: 400
+
+- C parameter:
+
+    The C parameter is used to attenuate the outcome. It is defined as
+
+    .. raw:: html
+
+        <img src="https://render.githubusercontent.com/render/math?math=Error=(C)(ClassificationError)+MarginError">
+
+    - Large C will penalize the classification error. Therefore, the model needs to work harder to classify the points, and thus produce better classification.
+
+    - Small C will not penalize the classification error as much. Therefore, lead to more chance of error.
+
+    .. image:: examples/support_vector_machines/c-parameter.png
        :width: 400
