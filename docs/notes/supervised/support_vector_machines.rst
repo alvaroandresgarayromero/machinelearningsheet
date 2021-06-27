@@ -2,7 +2,7 @@
     :description lang=en: Notes related to Support Vector Machines and Kernel Method
     :keywords: Python, Python3 Cheat Sheet
 
-================================================
+=================================================
 Support Vector Machines (SVM) and Kernel Method
 =================================================
 
