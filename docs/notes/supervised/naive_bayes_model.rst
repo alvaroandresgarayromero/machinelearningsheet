@@ -50,6 +50,10 @@ that assumes that all the features are independent of each other.
 It calculates the probability of a certain event
 happening based on the joint
 probabilistic distributions of more than one features.
+The major advantages that Naive Bayes has over other classification
+algorithms is its ability to handle an extremely large number of features.
+Note that the output of the Naive Bayes algorithm is a classification.
+
 
 - 1. Conditional Probability to calculate the value proportional probability where P(A|B) is the posterior probability, and A is the event, and B can be multiple features:
 
@@ -63,9 +67,8 @@ probabilistic distributions of more than one features.
 
     <img src="https://render.githubusercontent.com/render/math?math=P(y | x_1,...,x_n)=\frac{P(y)P(x_1,...,x_n | y)}{P(x_1,...,x_n)}=\frac{P(y)P(x_1 | y)P(x_2 | y)...P(x_n | y)}{P(x_1,...,x_n)}">
 
-- 2.a. The equation below is the sum of all  P(A | B) instances. This is d in order to be able to normalize by the total probabilities.
+- 2.a. The equation below is the sum of all  P(A | B) instances. This is calculated in order to be able to normalize by the total probabilities.
 
 .. raw:: html
 
     <img src="https://render.githubusercontent.com/render/math?math=P(x_1,...,x_n)=\sum_{i=0}^{N}P(y_i)P(x_1,...,x_n| y_i)=\sum_{i=0}^{N}P(y_i)P(x_1| y_i)P(x_2 | y_i)...P(x_n| y_i)">
-"

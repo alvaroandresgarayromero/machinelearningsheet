@@ -14,7 +14,12 @@ Definition
 ----------------
 
 The aim to predict a state or category (true/false, yes/no)
+by classifying the points with a line that best classifies them.
 
+
+The perceptron algorithm is used to find the best line. This technique starts with a
+random line, and iterates on a step in order to slowly
+walk the line towards the misclassified points, so we can classify them correctly.
 
 Perceptron Classifier
 -----------------------

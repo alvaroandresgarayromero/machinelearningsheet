@@ -45,3 +45,8 @@ Naive Bayes
 -------------
 
 - `Naive Bayes Notes <naive_bayes_model.rst>`_
+
+Support Vector Machines
+-------------------------
+
+- `Vector Machines Notes <support_vector_machines.rst>`_
