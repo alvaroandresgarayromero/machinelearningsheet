@@ -57,9 +57,8 @@ Error = Classification Error + Margin Error
     The margin error is identical to L2 normalization regularization.
     The sum of the square of the coefficients with the exception of the constant coefficient.
 
-    .. image:: examples/support_vector_machines/classificationError.png
-       :width: 400
-
     .. image:: examples/support_vector_machines/marginError.png
        :width: 400
 
+    .. image:: examples/support_vector_machines/marginError2.png
+       :width: 400
