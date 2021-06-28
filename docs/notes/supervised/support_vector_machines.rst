@@ -204,3 +204,17 @@ The image below shows a point (x1,x2) send to a point in (x1,x2,x1*x2) space.
         .. raw:: html
 
             <img src="https://render.githubusercontent.com/render/math?math=z=e^{-[(x-p)^2%2b(y-q)^2)]}=e^{-[(x-2)^2%2b(y-(-3))^2)]}">
+
+    - n dimensional points requires a n+1 dimensional function:
+
+        - n+1 dimensional function
+
+        .. raw:: html
+
+            <img src="https://render.githubusercontent.com/render/math?math=z=e^{-(x_1^2%2b...%2bx_n^2)}">
+
+        - Move maximum point to point (p1,...,pn)
+
+        .. raw:: html
+
+            <img src="https://render.githubusercontent.com/render/math?math=z=e^{-[(x_1-p_1)^2%2b...%2b(x_n-p_n)^2)]}">
