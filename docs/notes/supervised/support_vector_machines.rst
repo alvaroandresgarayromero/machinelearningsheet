@@ -160,7 +160,7 @@ The image below shows a point (x1,x2) send to a point in (x1,x2,x1*x2) space.
 
 - Radial Basis Function (RBF) Kernel
 
-    The use of special functions centered at each of the data points in order
+    The use of radial basis functions centered at each of the data points in order
     to model non-linear datasets.
 
     .. image:: examples/support_vector_machines/kernels/rbf_technique.png
@@ -218,3 +218,20 @@ The image below shows a point (x1,x2) send to a point in (x1,x2,x1*x2) space.
         .. raw:: html
 
             <img src="https://render.githubusercontent.com/render/math?math=z=e^{-[(x_1-p_1)^2%2b...%2b(x_n-p_n)^2)]}">
+
+
+    - Similarity technique
+
+        The notion of similarity can be used to translate points into a higher dimension.
+        For example, in a 1 dimensional point distance p and q, then
+
+        .. raw:: html
+
+            <img src="https://render.githubusercontent.com/render/math?math=similarity(p,q)=e^{-distance(p,q)^2}=e^{-(p-q)^2}">
+
+        Therefore, similarity is the output of the height of a point in the radial basis function. As distance increases, similarity decreases and vice versa..
+
+    - y-gamma hyperparameter
+
+    .. image:: examples/support_vector_machines/kernels/y_gamma_param.png
+       :width: 400
