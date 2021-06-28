@@ -103,19 +103,20 @@ The image below shows a point (x1,x2) send to a point in (x1,x2,x1*x2) space.
 
     - monomials of degree degree 2 containing x1 and x2:
 
-        .. raw:: html
-
-            <img src="https://render.githubusercontent.com/render/math?math=x3=x1^2">
-
 
         .. raw:: html
 
-            <img src="https://render.githubusercontent.com/render/math?math=x4=x1x2">
+            <img src="https://render.githubusercontent.com/render/math?math=x_3=x_1^2">
+
+        - d
+        .. raw:: html
+
+            <img src="https://render.githubusercontent.com/render/math?math=x_4=x_1x_2">
 
 
         .. raw:: html
 
-            <img src="https://render.githubusercontent.com/render/math?math=x5=x2^2">
+            <img src="https://render.githubusercontent.com/render/math?math=x_5=x_2^2">
 
 
     - monomials of degree degree 3 containing x1 and x2:
