@@ -101,7 +101,7 @@ The image below shows a point (x1,x2) send to a point in (x1,x2,x1*x2) space.
     .. image:: examples/support_vector_machines/kernels/circle_polynomial.png
        :width: 400
 
-    - monomials of degree degree 2 containing x1 and x2:
+    - monomials of degree degree 2 containing x1 and x2 axis:
 
         - x3
         .. raw:: html
@@ -119,7 +119,7 @@ The image below shows a point (x1,x2) send to a point in (x1,x2,x1*x2) space.
             <img src="https://render.githubusercontent.com/render/math?math=x_5=x_2^2">
 
 
-    - monomials of degree degree 3 containing x1 and x2:
+    - monomials of degree degree 3 containing x1 and x2 axis:
 
         - x3
         .. raw:: html
@@ -159,3 +159,42 @@ The image below shows a point (x1,x2) send to a point in (x1,x2,x1*x2) space.
 
 
 - Radial Basis Function (RBF) Kernel
+
+    The use of special functions centered at each of the data points in order
+    to model non-linear datasets.
+
+    .. image:: examples/support_vector_machines/kernels/rbf_technique.png
+       :width: 400
+
+    .. image:: examples/support_vector_machines/kernels/rbf_technique2.png
+       :width: 400
+
+    - One dimensional points in x-axis requires a 2 dimensional function:
+
+        - 2 dimensional function:
+
+        .. raw:: html
+
+            <img src="https://render.githubusercontent.com/render/math?math=y=e^{-x^2}">
+
+
+        .. image:: examples/support_vector_machines/kernels/guassian_distribution.png
+           :width: 400
+
+        - Shift maximum to point p, ex: 5
+
+        .. raw:: html
+
+            <img src="https://render.githubusercontent.com/render/math?math=y=e^{-(x-p)^2}=e^{-(x-5)^2}">
+
+
+    - Two dimensional points (x,y) requires a 3 dimensional function:
+
+        - 3 dimensional function:
+
+        .. raw:: html
+
+            <img src="https://render.githubusercontent.com/render/math?math=z=e^{-(x^2%2by^2)}">
+
+        .. image:: examples/support_vector_machines/kernels/guassian_distribution2.png
+           :width: 400
