@@ -103,23 +103,58 @@ The image below shows a point (x1,x2) send to a point in (x1,x2,x1*x2) space.
 
     - monomials of degree degree 2 containing x1 and x2:
 
-
+        - x3
         .. raw:: html
 
             <img src="https://render.githubusercontent.com/render/math?math=x_3=x_1^2">
 
-        - d
+        - x4
         .. raw:: html
 
             <img src="https://render.githubusercontent.com/render/math?math=x_4=x_1x_2">
 
-
+        - x5
         .. raw:: html
 
             <img src="https://render.githubusercontent.com/render/math?math=x_5=x_2^2">
 
 
     - monomials of degree degree 3 containing x1 and x2:
+
+        - x3
+        .. raw:: html
+
+            <img src="https://render.githubusercontent.com/render/math?math=x_3=x_1^2">
+
+        - x4
+        .. raw:: html
+
+            <img src="https://render.githubusercontent.com/render/math?math=x_4=x_1x_2">
+
+        - x5
+        .. raw:: html
+
+            <img src="https://render.githubusercontent.com/render/math?math=x_5=x_2^2">
+
+        - x6
+        .. raw:: html
+
+            <img src="https://render.githubusercontent.com/render/math?math=x_3=x_1^3">
+
+        - x7
+        .. raw:: html
+
+            <img src="https://render.githubusercontent.com/render/math?math=x_4={x_1}^2x_2">
+
+        - x8
+        .. raw:: html
+
+            <img src="https://render.githubusercontent.com/render/math?math=x_4=x_1{x_2}^2">
+
+        - x9
+        .. raw:: html
+
+            <img src="https://render.githubusercontent.com/render/math?math=x_5=x_2^3">
 
 
 
