@@ -181,7 +181,7 @@ The image below shows a point (x1,x2) send to a point in (x1,x2,x1*x2) space.
         .. image:: examples/support_vector_machines/kernels/guassian_distribution.png
            :width: 400
 
-        - Shift maximum to point p, ex: 5
+        - Move maximum point to point p, ex: 5
 
         .. raw:: html
 
@@ -196,5 +196,11 @@ The image below shows a point (x1,x2) send to a point in (x1,x2,x1*x2) space.
 
             <img src="https://render.githubusercontent.com/render/math?math=z=e^{-(x^2%2by^2)}">
 
-        .. image:: examples/support_vector_machines/kernels/guassian_distribution2.png
+        .. image:: examples/support_vector_machines/kernels/guassian_distribution_3d.png
            :width: 400
+
+        - Move maximum point to point (p,q), ex: (2,-3)
+
+        .. raw:: html
+
+            <img src="https://render.githubusercontent.com/render/math?math=z=e^{-[(x-p)^2%2b(y-q)^2)]}=e^{-[(x-2)^2%2b(y-(-3))^2)]}">
