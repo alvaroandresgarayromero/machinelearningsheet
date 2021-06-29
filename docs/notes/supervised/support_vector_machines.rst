@@ -223,13 +223,16 @@ The image below shows a point (x1,x2) send to a point in (x1,x2,x1*x2) space.
     - Similarity technique
 
         The notion of similarity can be used to translate points into a higher dimension.
-        For example, in a 1 dimensional point distance p and q, then
+        For example, image two points in a 1 dimension line p and q, then
 
         .. raw:: html
 
             <img src="https://render.githubusercontent.com/render/math?math=similarity(p,q)=e^{-distance(p,q)^2}=e^{-(p-q)^2}">
 
-        Therefore, similarity is the output of the height of a point in the radial basis function. As distance increases, similarity decreases and vice versa..
+        Therefore, similarity is the output of the height of a point in the radial basis function. As distance increases, similarity decreases and vice versa.
+        The similarity between all points are calculate where a column is created for each perspective of a point.
+        That is, if there are two points, then two new columns are created where the similarity of the point with itself is 1.
+
 
     - y-gamma hyperparameter
 

@@ -15,9 +15,9 @@ A hack was used to make them visible based on this discussion here:
 Cheat Sheet
 ============
 
-- `Supervised <docs/notes/supervised/supervised_ml.rst>`_
-- `Unsupervised <docs/notes/unsupervised_ml.rst>`_
-- `Reinforcement Learning <docs/notes/reinforcement_learning_ml.rst>`_
+- `Supervised (in progress) <docs/notes/supervised/supervised_ml.rst>`_
+- `Unsupervised (in progress) <docs/notes/unsupervised_ml.rst>`_
+- `Reinforcement Learning (in progress) <docs/notes/reinforcement_learning_ml.rst>`_
 
 
 Getting Started

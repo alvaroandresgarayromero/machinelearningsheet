@@ -50,3 +50,8 @@ Support Vector Machines
 -------------------------
 
 - `Vector Machines Notes <support_vector_machines.rst>`_
+
+Ensembles Methods
+------------------
+
+- `Ensemble Methods Notes <ensembles.rst>`_
