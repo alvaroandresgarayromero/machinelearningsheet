@@ -89,11 +89,6 @@ of correct/incorrect
 
 - Weighing the model:
 
-.. raw:: html
-
-    <img src="https://render.githubusercontent.com/render/math?math=weight=ln(\frac{accuracy}{1-accuracy})=ln(\frac{#correct}{#incorrect})">
-
-
     - Truthful model (100% correct, 0% incorrect data points classification)
 
         Weight approaches infinity
@@ -105,6 +100,11 @@ of correct/incorrect
     - total Liar model (0% correct, 100% incorrect data points classification)
 
         Weight approaches negative infinity
+
+    .. raw:: html
+
+        <img src="https://render.githubusercontent.com/render/math?math=weight=ln(\frac{accuracy}{1-accuracy})=ln(\frac{#correct}{#incorrect})">
+
 
 - Combining the model
 
