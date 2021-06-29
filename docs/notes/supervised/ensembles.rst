@@ -103,7 +103,7 @@ of correct/incorrect
 
     .. raw:: html
 
-        <img src="https://render.githubusercontent.com/render/math?math=weight=ln(\frac{accuracy}{1-accuracy})=ln(\frac{#correct}{#incorrect})">
+        <img src="https://render.githubusercontent.com/render/math?math=weight=ln\frac{accuracy}{1-accuracy}=ln\frac{#correct}{#incorrect}">
 
 
 - Combining the model
