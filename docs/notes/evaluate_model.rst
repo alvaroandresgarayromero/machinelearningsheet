@@ -15,6 +15,18 @@ Description
 
 Techniques to evaluate model performance
 
+Machine Learning
+------------------
+
+Common machine learning process is the following:
+
+- Import the model.
+- Instantiate the model with the hyperparameters of interest.
+- Fit the model to the training data.
+- Predict on the test data.
+- Score the model by comparing the predictions to the actual values.
+
+
 Accuracy
 ---------
 
@@ -42,7 +54,6 @@ This score can range from 0 to 1, with 1 being the best possible score.
 
 F1 Score
 ---------
-
 
 The weighted average of the precision and recall scores.
 
