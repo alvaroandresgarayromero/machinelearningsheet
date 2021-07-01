@@ -29,7 +29,7 @@ Common machine learning process:
 Confusion Matrix
 ------------------
 
-.. image:: examples/model_evaluation/confusion_matrix.png
+.. image:: images/confusion_matrix.png
    :width: 400
 
 Note: The first row in the table is the actual positive label, and
@@ -55,7 +55,7 @@ This score can range from 0 to 1, with 1 being the best possible score.
 
 Ex:
 
-.. image:: examples/model_evaluation/accuracy_patient_example.png
+.. image:: images/accuracy_patient_example.png
    :width: 400
 
 
@@ -73,7 +73,7 @@ This score can range from 0 to 1, with 1 being the best possible score.
 
 Ex: Out of the points we have predicted ot be positive, how many are correct? (6/8)
 
-.. image:: examples/model_evaluation/precision_example.png
+.. image:: images/precision_example.png
    :width: 400
 
 
@@ -91,7 +91,7 @@ This score can range from 0 to 1, with 1 being the best possible score.
 
 Ex: Out of the points labeled positive, how many did we correctly predict? (6/7)
 
-.. image:: examples/model_evaluation/precision_example.png
+.. image:: images/precision_example.png
    :width: 400
 
 F-Score
@@ -116,7 +116,7 @@ score fits the datasets goal
     - Spam: Identifying an email is spam. (can't afford to have grandma's email be spam)
     - Promotional: Sending promotional material in the main to potential clients (can't afford to send promotional material to not potential clients)
 
-.. image:: examples/model_evaluation/f-score.png
+.. image:: images/f-score.png
    :width: 400
 
 ROC Curve
@@ -130,15 +130,15 @@ split (think of sampling the data in signal processing terms)
 to create the curve. For example, in a 1 dimensional dataset, the
 data is split in the most left, middle and most right.
 
-.. image:: examples/model_evaluation/roc_curve_1.png
+.. image:: images/roc_curve_1.png
    :width: 400
 
-.. image:: examples/model_evaluation/roc_curve_2.png
+.. image:: images/roc_curve_2.png
    :width: 400
 
 The area under the curve is then calculated (approximated below)
 
-.. image:: examples/model_evaluation/roc_curve_3.png
+.. image:: images/roc_curve_3.png
    :width: 400
 
 
@@ -146,5 +146,5 @@ The area under the curve is then calculated (approximated below)
 The closer the area under the ROC curve is to one,
 then the better the model is.
 
-.. image:: examples/model_evaluation/area_under_roc_curve.png
+.. image:: images/area_under_roc_curve.png
    :width: 400
