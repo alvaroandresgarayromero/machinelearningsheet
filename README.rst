@@ -18,7 +18,7 @@ Cheat Sheet
 - `Supervised (in progress) <docs/notes/supervised/supervised_ml.rst>`_
 - `Unsupervised (in progress) <docs/notes/unsupervised_ml.rst>`_
 - `Reinforcement Learning (in progress) <docs/notes/reinforcement_learning_ml.rst>`_
-
+- `Model Evaluation Metrics (in progress) <docs/notes/model_evaluation/evaluate_model.rst>`_
 
 Getting Started
 ================
