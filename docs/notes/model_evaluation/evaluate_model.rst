@@ -26,6 +26,32 @@ Common machine learning process:
 - Predict on the test data.
 - Score the model by comparing the predictions to the actual values.
 
+
+Model Summary
+--------------
+
+- Regression
+    - Linear Regression
+
+- Classification
+    - Logistic Regression
+
+- Both
+    - Decision Trees, Random Forest, Adaptive boosting,
+
+
+Metrics Summary
+----------------
+
+- Regression
+    - Mean Square Error, Mean Absolute Error, R2 Score
+
+- Classification
+    - Precision, Recall, Accuracy, Area Under Curve
+
+- Both
+
+
 Confusion Matrix
 ------------------
 
@@ -149,8 +175,36 @@ then the better the model is.
 .. image:: images/area_under_roc_curve.png
    :width: 400
 
+Error Function:
+-------------------
+The error between the point and the point of the predicted line in the y-axis (misclassified points).
+The smaller the error, the closer the predicted line is to the data
+
+- Mean Absolute Error:
+    The VERTICAL distance between the point and line, where y is the point and y hat is the point of the line.
+    The absolute distance makes sure that the distance stays positive regardless of been negative.
+
+    .. raw:: html
+
+        <img src="https://render.githubusercontent.com/render/math?math=ERROR=\frac{\sum_{i=n}^{N}|y[i]-{\hat{y}}[i]|}{N}">
+
+
+- Mean Square Error:
+    The SQUARE distance between the point and line (average amount you miss by across all the points), where y is the point and y hat is the point of the line.
+    The error is the average of areas of all the squares. A constant 1/2 is multiplied for convenience
+
+    The mean squared error is by far the most used metric for optimization in regression problems
+    because the quadratic term is differentiable. However, an absolute value is not differentiable. This factor makes this metric better for gradient based optimization algorithms.
+
+    .. raw:: html
+
+        <img src="https://render.githubusercontent.com/render/math?math=ERROR=\frac{\sum_{i=n}^{N}(y[i]-{\hat{y}}[i])^2}{2N}">
+
+
 R2 Score
 ----------
+
+The amount of variability captured by a model.
 
 .. image:: images/r2_score.png
    :width: 400
