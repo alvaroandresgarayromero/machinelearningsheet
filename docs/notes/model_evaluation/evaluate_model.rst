@@ -136,7 +136,7 @@ data is split in the most left, middle and most right.
 .. image:: images/roc_curve_2.png
    :width: 400
 
-The area under the curve is then calculated (approximated below)
+The area under the curve is then calculated (approximated below to 0.8)
 
 .. image:: images/roc_curve_3.png
    :width: 400
@@ -147,4 +147,10 @@ The closer the area under the ROC curve is to one,
 then the better the model is.
 
 .. image:: images/area_under_roc_curve.png
+   :width: 400
+
+R2 Score
+----------
+
+.. image:: images/r2_score.png
    :width: 400
