@@ -24,8 +24,7 @@ Common machine learning process:
 - Instantiate the model with the hyperparameters of interest.
 - Fit the model to the training data.
 - Cross validate the model to make sure it is not overfitting or underfitting. As the model gets more complex, then the training data is predicted nicely (low error), but the cross validation data has high error
-    - One method is to split the data three way such that 60% is for training, 20% is for validation, and a final 20% is for
-testing.
+    - One method is to split the data three way such that 60% is for training, 20% is for validation, and a final 20% is for testing.
 
         .. image:: images/cross-validation.png
            :width: 400
