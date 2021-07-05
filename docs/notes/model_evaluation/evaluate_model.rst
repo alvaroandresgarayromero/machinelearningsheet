@@ -23,19 +23,27 @@ Common machine learning process:
 - Import the model.
 - Instantiate the model with the hyperparameters of interest.
 - Fit the model to the training data.
-- Cross validate the model to make sure it is not overfitting or underfitting. As the model gets more complex, then the training data is predicted nicely (low error), but the cross validation data has high error
+- Cross validate the model to make sure it is not overfitting or underfitting by using validation data instead of testing data. Testing data should be used at the end for final verification.
     - One method is to split the data three way such that 60% is for training, 20% is for validation, and a final 20% is for testing.
 
         .. image:: images/cross-validation.png
            :width: 400
 
-    - Second method is to do K-fold cross-validation when the dataset is small. This reduces the likelihood of critical data not been used for training data (the data was moved to be validation or test data)
+    - Second method is to do K-fold cross-validation when the dataset is small. is a method used to recycle the data and use it as training and validation as well. It consists of training and testing several models on different portions of the data.
 
         .. image:: images/kfold-crossvalidation.png
            :width: 400
 
 - Predict on the test data.
 - Score the model by comparing the predictions to the actual values.
+- [Optinal] - Grid Search to tune hyperparameters
+    - Grid search method of training the model several times over different combinations of hyperparameters, and selecting the best performing one
+    - Normally when we search for hyperparameters, we tend to do an exponential search, so we would try values such as 0.1, 1, 10, 100, 1000, etc
+    - The example belows shows the attenuation of the C and Kernel hyperparameters for Support-Vector-Machine (SVM) model.
+
+        .. image:: images/grid_search_ex.png
+           :width: 400
+
 
 
 Model Summary
