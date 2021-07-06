@@ -15189,7 +15189,7 @@ In the code block below, you will need to implement the following:</p>
     <span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span> <span class="c1"># Get end time</span>
     
     <span class="c1"># TODO: Calculate the training time</span>
-    <span class="n">results</span><span class="p">[</span><span class="s1">&#39;train_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">start</span><span class="o">-</span><span class="n">end</span>
+    <span class="n">results</span><span class="p">[</span><span class="s1">&#39;train_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">end</span><span class="o">-</span><span class="n">start</span>
         
     <span class="c1"># TODO: Get the predictions on the test set(X_test),</span>
     <span class="c1">#       then get predictions on the first 300 training samples(X_train) using .predict()</span>
@@ -15199,7 +15199,7 @@ In the code block below, you will need to implement the following:</p>
     <span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span> <span class="c1"># Get end time</span>
     
     <span class="c1"># TODO: Calculate the total prediction time</span>
-    <span class="n">results</span><span class="p">[</span><span class="s1">&#39;pred_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">start</span><span class="o">-</span><span class="n">end</span>
+    <span class="n">results</span><span class="p">[</span><span class="s1">&#39;pred_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">end</span><span class="o">-</span><span class="n">start</span>
             
     <span class="c1"># TODO: Compute accuracy on the first 300 training samples which is y_train[:300]</span>
     <span class="n">results</span><span class="p">[</span><span class="s1">&#39;acc_train&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_train</span><span class="p">[:</span><span class="mi">300</span><span class="p">],</span> <span class="n">predictions_train</span><span class="p">)</span>
@@ -15393,15 +15393,39 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Imagine for your final machine learning project, you are tasked
+to recruit 100 friends from your machine learning cohort,
+and make them take the ultimate machine learning exam. Your goal is to
+get them a passing grade combined. However, there are some rules.
+They must complete the test individually!</p>
+<p>Interestingly, you realize that you can bend the rules without the instructor knowing.
+You tell each friend to take the test one at a time. You then decide to give
+fresh cookies on certain questions worth spending more time on. The friend doesn't know why
+you do this, but loves the free cookies and decides to spend more time answering that
+particular question. In reality though, the cookies goes to questions that were answered
+incorrectly. You hope that the new tester will spend more quality time answering that
+question. At the end of the day, all your friends complete the test, and gets to keep a copy of their own
+test.</p>
+<p>After a long day of cookies and monitoring the test, you decide to go back to your dorm.
+You put all the copies of the test on your desk and decide to merge them into one by picking the
+answer that was chosen the most for each test. You are hopeful that your friends answers when combined
+will yield a passing grade. Specially when you gave cookies on questions that you wanted them
+to spend more time critically answering.</p>
+<p>After compiling all tests into one, you discover that your friends got a passing grade! Those cookies
+did persuade your friends to think more critically. The next day, you send a mass text to all your friends
+with new question still related to machine learning. Thankfully your friends still have a fresh memory,
+and copy of the machine learning test they just took. They look back at their answers and figure out a
+reasonable answer for the question. In a couple of hours, you get back the answers from all your friends,
+you compile them into one, and get a passing result again! You feel so excited, you ask them
+about who will win tomorrow's soccer game. You soon realize that was a random question, and
+then noticed that no one answered back. However, you then remember
+that your friends have been trained to answer machine learning question only, not soccer!</p>
+<p>This is similar to how AdaBoost classifier works where
+each learner strategically focuses on the previous model's mistakes/weaknesses.
+Once all models finish iterating,
+then they are combined into one to create a super classifier.</p>
 <ul>
-<li><p>The construction of building AdaBoost classifiers is similar to bagging,
-but the classifiers are not picked randomly.
-They are constructed in a smarter way, by picking each model
-strategically to focus on the previous model's mistakes/weaknesses. In other words,
-each learner tries to correctly classify the points in which the previous classifiers have failed.</p>
-</li>
-<li><p>Reference: Grokking Machine Learning Book</p>
-</li>
+<li>Reference: Grokking Machine Learning Book</li>
 </ul>
 
 </div>
